@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    height: 6em;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 1;
+    width: 100%;
+    background-color: #083a70;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 0 0 0 3em;
+    margin-left: 1em;
+  }
+}

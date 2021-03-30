@@ -1,0 +1,13 @@
+<header>
+  <img src="assets/logo.png" alt="" />
+
+  <div class="content">
+    <h3>Currency: {{ this.exc.pages[this.exc.pageNumber] }}</h3>
+    <span>Date: {{ this.exc.exchanges?.date | date: "dd/MMM/yyy" }}</span>
+    <!-- <select [(ngModel)]="selectedOption" name="currency" id="curr" (change)="">
+      <option *ngFor="let currency of this.exc.currencies" [value]="currency">
+        {{ currency }}
+      </option>
+    </select> -->
+  </div>
+</header>

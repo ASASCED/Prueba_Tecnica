@@ -1,0 +1,24 @@
+<div class="exchange-table">
+  <button><i class="fas fa-redo"></i></button>
+
+  <table>
+    <tr>
+      <th>Exchange</th>
+      <th>Value</th>
+    </tr>
+    <tr *ngFor="let exc of this.exc.exchanges?.rates">
+      <td>{{ exc.key }}</td>
+      <td>{{ exc.value }}</td>
+    </tr>
+  </table>
+
+  <div class="pagination">
+    <button (click)="previousPage()">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <span>{{ this.exc.pageNumber + 1 }}</span>
+    <button (click)="nextPage()">
+      <i class="fa fa-arrow-right"></i>
+    </button>
+  </div>
+</div>
